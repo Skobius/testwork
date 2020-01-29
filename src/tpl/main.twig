@@ -1,0 +1,132 @@
+{% extends '/tpl/inc/page.twig' %}
+{% block content %}
+    <div class="main">
+        <div class="main__background"></div>
+        <div class="container">
+            <form class="main__inner">
+                <div class="main__header">
+                    Анкета
+                </div>
+                <div class="small-header" id="a1">
+                    {% include 'tpl/inc/svg/head1.svg' %}
+                    <span>Личная информация</span>
+                </div>
+                <label class="input-element">
+                    <input type="text" required value="Симдянкин Глеб Николаевич"/>
+                    <div class="label-text">ФИО</div>
+                </label>
+                <select class="js-select">
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option selected>1991</option>
+                    <option>1990</option>
+                </select>
+                <label class="input-element">
+                    <input type="text" required value="Смоленск"/>
+                    <div class="label-text">Место проживания</div>
+                </label>
+                <label class="input-element">
+                    <input type="text" required value="skobius"/>
+                    <div class="label-text">Skype</div>
+                </label>
+                <label class="input-element">
+                    <input type="text" required value="tayson9133@gmail.com"/>
+                    <div class="label-text">E-mail</div>
+                </label>
+                <div class="small-header small-header--experience" id="a2">
+                    {% include 'tpl/inc/svg/head2.svg' %}
+                    <span>Расскажите о своем опыте</span>
+                </div>
+                <div class="checkbox-block">
+                    <div class="checkbox-block__element">
+                        <label class="container custom-checkbox">БЭМ/OOCSS</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container custom-checkbox">Stylus/LESS/SASS</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container custom-checkbox">Работаю с SVG </span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-block__element">
+                        <label class="container custom-checkbox">Верстаю семантично</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container custom-checkbox">ES2015/ES2016</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container custom-checkbox">Gulp/GRUNT</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-block__element">
+                        <label class="container custom-checkbox">Webpack</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container custom-checkbox">jQuery</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container custom-checkbox">Ипользую Git</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="small-header small-header--js" id="a3">
+                    {% include 'tpl/inc/svg/head3.svg' %}
+                    <span>Уровень владения JavaScript</span>
+                </div>
+                <div class="level-block">
+                    <span class="level-block--first">Не владею</span>
+                    <span class="level-block--second">Использую готовые <br> решения</span>
+                    <span class="level-block--third">Использую готовые решения <br> и умею и переделывать</span>
+                    <span class="level-block--fourth">Пишу сложный JS с нуля</span>
+                </div>
+                <div id="red"></div>
+                <div class="small-header small-header--about" id="a4">
+                    {% include 'tpl/inc/svg/head4.svg' %}
+                    <span>Расскажите о себе</span>
+                </div>
+                <div class="header-text">Напишите несколько предложений, чем привлекла наша вакансия <br>и что вы ожидаете от работы у нас</div>
+                <textarea placeholder="Понравилась тем, что..." class="about-you">Понравилась тем, что вы ищете хорошего верстальщика, который любит свое дело. А также цените и хорошо оплачиваете его труд</textarea>
+                <div class="btn btn--blue">Готово</div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

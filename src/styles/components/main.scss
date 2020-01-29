@@ -1,0 +1,307 @@
+.main {
+  padding-top: rem(80);
+  position: relative;
+
+  @include media-breakpoint-down(tab) {
+    padding-top: 0;
+    top: 0;
+  }
+
+  &__inner {
+    @include media-breakpoint-down(tab) {
+      padding: 0 rem(20);
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: rem(80);
+    left: 0;
+    width: 100%;
+    height: rem(160);
+    background: url("../images/background-main.jpg") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    //background-attachment: fixed;
+
+    @include media-breakpoint-down(tab) {
+      top: rem(-116);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: rem(40);
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    }
+  }
+
+  &__header {
+    font-size: rem(70);
+    color: #000000;
+    font-weight: 100;
+    text-align: center;
+    margin-top: rem(116);
+  }
+
+  .small-header {
+    margin-top: rem(60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem(48);
+
+    @include media-breakpoint-down(tab) {
+      margin-top: rem(50) !important;
+    }
+
+    &--experience {
+      margin-top: rem(78);
+    }
+
+    &--js {
+      margin-top: rem(120);
+      margin-bottom: rem(42);
+    }
+
+    &--about {
+      margin-top: rem(132);
+      margin-bottom: rem(10);
+    }
+
+    span {
+      margin-top: rem(22);
+      font-size: rem(30);
+      color: #1c1c1c;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  .input-element {
+    width: rem(520);
+    height: rem(60);
+    position: relative;
+    margin: rem(24) auto 0;
+    text-align: center;
+    border-radius: rem(5);
+    background-color: rgba(217,217,217,0);
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: flex-end;
+
+    @include media-breakpoint-down(tab) {
+      width: 100%;
+    }
+
+    .label-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: rem(24);
+      font-weight: 400;
+      text-align: center;
+      color: #c8c8c8;
+      transition: .4s;
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      height: rem(50);
+      text-align: center;
+      outline: none;
+      padding: 0 rem(10);
+      font-size: 20px;
+      color: #1c1c1c;
+      font-weight: 400;
+      border: none;
+
+      &:focus + .label-text, &:valid + .label-text {
+        font-size: 14px;
+        color: #adadad;
+        font-weight: 400;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -25px);
+      }
+    }
+  }
+
+  .checkbox-block {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(tab) {
+      flex-direction: column;
+    }
+
+    &__element {
+      width: 28%;
+
+      @include media-breakpoint-down(tab) {
+        width: 100%;
+      }
+    }
+  }
+
+  .level-block {
+    display: flex;
+    //justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+
+    &--first {
+      width: rem(182);
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: rem(15);
+        border-left: 1px dotted #b7b7b7 ;
+        position: absolute;
+        z-index: 4;
+        bottom: rem(-20);
+      }
+    }
+
+    &--second {
+      width: rem(200);
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: rem(15);
+        border-left: 1px dotted #b7b7b7 ;
+        position: absolute;
+        z-index: 4;
+        bottom: rem(-20);
+      }
+    }
+
+    &--third {
+      width: rem(238);
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: rem(15);
+        border-left: 1px dotted #b7b7b7 ;
+        position: absolute;
+        z-index: 4;
+        bottom: rem(-20);
+      }
+    }
+
+    &--fourth {
+      width: rem(152);
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: rem(10);
+        border-right: 1px dotted #b7b7b7 ;
+        position: absolute;
+        z-index: 4;
+        right: 0;
+        bottom: rem(-15);
+      }
+    }
+
+    span {
+      font-size: rem(13);
+      line-height: rem(19);
+      color: #2e211c;
+      font-weight: 300;
+
+      @include media-breakpoint-down(tab) {
+        font-size: rem(10);
+      }
+    }
+  }
+
+  .header-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1c1c;
+    font-weight: 300;
+    text-align: center;
+    width: rem(520);
+    margin: 0 auto;
+
+    @include media-breakpoint-down(tab) {
+      width: 100%;
+    }
+  }
+
+  .about-you {
+    display: block;
+    margin: rem(40) auto 0;
+    width: rem(520);
+    height: rem(180);
+    border-radius: rem(5);
+    background-color: rgba(217,217,217,0);
+    border: 1px solid #e5e5e5;
+    font-size: rem(20);
+    color: #1c1c1c;
+    font-weight: 400;
+    padding: rem(20);
+    outline: none;
+
+    @include media-breakpoint-down(tab) {
+      width: 100%;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #c8c8c8;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #c8c8c8;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #c8c8c8;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #c8c8c8;
+    }
+  }
+
+  .btn {
+    border-radius: 10px;
+    background-color: #435993;
+    margin: rem(68) auto rem(74);
+    width: rem(115);
+    height: rem(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #435993;
+    transition: .4s;
+
+    @include media-breakpoint-down(tab) {
+      margin-top: rem(30);
+    }
+
+    &--blue {
+      background: #435993;
+      color: $white;
+
+      &:hover {
+        background: $white;
+        color: #435993;
+      }
+    }
+  }
+}

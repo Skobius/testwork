@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" width="49" height="49">
+	<defs>
+		<image width="49" height="49" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxAQMAAABJUtNfAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAA5JREFUeJxjYBgFgwEAAAGIAAHyYaxRAAAAAElFTkSuQmCC"/>
+		<image width="47" height="47" id="img4" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAMAAABE+WOeAAAAAXNSR0IB2cksfwAAAWhQTFRFAAAA////6urq1NTUwcHBs7OzqKiopKSknp6e6+vryMjIp6enrq6ux8fH29vb6enp9vb2////2traxsbG5ubmuLi4qqqqzs7O8PDw9vb2vb29rKys3Nzc////3t7ezc3N////z8/P3t7e////ysrKq6ur6+vr////wMDAtra2////wcHBu7u7////////vLy8ycnJt7e3ysrK4ODgrKyspqamwMDAzs7O7+/voKCgt7e3v7+/5+fntra20tLS0NDQ3d3dn5+f////oKCg3d3dqamp////oKCg0dHRtbW1zs7Otra2yMjI8PDwoaGh7Ozs09PT09PTwsLC2trasrKy6enp9fX19/f3////0dHRo6Oj////tLS00NDQt7e3sbGxsbGxv7+/0dHR6Ojopqam9/f3xcXFx8fH6+vrqqqqvb29pqamv7+/ycnJrKys9vb28PDw5+fnx8fH6Ojo9fX1srKyqampo6OjnIZrPwAAAHh0Uk5TAAIxcqHJ5fD/MpDo1ZViORsPYZQ9u+B+Ixyu218FVIAJf1UBjN00BqXAEKSxBwiyjb2PU9zqqYEg+ryqP793eFv8A/la4QT7esJ9wZEh9zZ0c6JgyDoaHg558g3DfL7Nzqd1N+sflpIz36vpqI7aHSJBkzgZyubxmzlQWgAAAj1JREFUeJyVVf9D0lAQv4EgczM2cfPLRBS/DCVnK1agmCa0CMEKMsmKvoeGmvn13+81Nhib783dD+++vM/e7t7duwNwEBUIDoTCg5HBcGggGKCc2w6ihxh2+F6U44HnoiMxlhmiCehRQRwb77OMj4nCKAY9MSlNxV3W+JQ0OXEbfJpJzNx6zswsk3QZ5+YXFrF+Lkrzc/0WObW0jIUDLC+l5L7T0/dXCHAAZTVt/8MDVcZCTQfUhz3lUYb3gAPwmWlL5DRSUiyiNc6UHj/p8Kyay61lsR8k1js8v6B0hI2n8fimgMUrmbzBhS3T8AwFvV1AQsRB5n7ROIt+rtvw+gs8XhcDaB0uWT98WVaU8g4h5FIF1bvWjbCq7u6qVQI+y1DwiiUAnMQG4HXMBz72Bmp1H/h6Dd5GfeD3QsC862r7Qq4g7JPwXBhyja628T4ul/D5RdQ4gEhP88rv/x37+UZ+ifgPB3b/P5Zk+VPTw//PvfupqoUCMb+w9wVSvu7/K3zzmd/vvuqHhu0f+BfopJ8a6te/uvXvGe9mCy2HovW+vO5TPzL6iFA0da98FdcMls8oPTyhHqz+AOuJDveot9nfpsC1O/2NXM902+pvkJTu0D8l29Co3KE/V2wa5dX/V1bTfaNVPm6SXOKbxw4HqJNT/Pw6PD1xD+6khp2Pmns+IvqD5q/usupo/uLuOC+I5bM+y1n5SPiL9RMlpdVmz+sXlw1oXF7Uz9l2y2tUUXSwdnV9E7m5vqoFaVeY/wD4D1IehL1gMwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background2" style="display: none" href="#img3" x="0" y="0" />
+	<use id="Layer 2" href="#img4" x="1" y="1" />
+</svg>

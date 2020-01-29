@@ -1,0 +1,154 @@
+.custom-checkbox {
+  /* Customize the label (the container) */
+  &.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    margin: 0;
+    margin-right: rem(22);
+    margin-bottom: rem(16);
+    font-size: rem(16);
+    line-height: initial;
+    color: #000000;
+    font-weight: 300;
+    padding-left: rem(30);
+  }
+
+  &__count {
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(10);
+    line-height: rem(18);
+    width: rem(30);
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: $blue;
+    transform: rotate(0.18deg);
+  }
+
+  /* Hide the browser's default checkbox */
+  &.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: rem(20);
+    width: rem(20);
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #435993;
+  }
+
+  /* On mouse-over, add a grey background color */
+  &.container:hover input ~ .checkmark {
+    background-color: #e9efff;;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  &.container input:checked ~ .checkmark {
+    border: 1px solid #435993;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #435993;
+  }
+
+  &.container input ~ .view-more {
+    display: none;
+  }
+
+  &.container input:checked ~ .view-more {
+    display: block;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  &.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  &.container .checkmark:after {
+    left: rem(5.5);
+    top: rem(0.5);
+    width: rem(8);
+    height: rem(12);
+    border: solid $white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+#red {
+  position: relative;
+  float: left;
+  clear: left;
+  width: 100%;
+  margin: 15px 0;
+
+  &:before {
+    content: '';
+    height: rem(12);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: rem(-7);
+    background: $white;
+    z-index: 3;
+    transform: rotate(-0.7deg);
+  }
+}
+.ui-widget.ui-widget-content {
+  background: #e8e8e8;
+  border: none;
+  border-radius: 0;
+  height: rem(14);
+}
+#swatch {
+  width: 100%;
+  height: 100px;
+  margin-top: 18px;
+  margin-left: 350px;
+  background-image: none;
+}
+#red .ui-slider-range {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ccb1f1+0,948dcb+40,435993+100 */
+  background: rgb(204,177,241); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(204,177,241,1) 0%, rgba(148,141,203,1) 40%, rgba(67,89,147,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(204,177,241,1) 0%,rgba(148,141,203,1) 40%,rgba(67,89,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(204,177,241,1) 0%,rgba(148,141,203,1) 40%,rgba(67,89,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccb1f1', endColorstr='#435993',GradientType=1 ); /* IE6-9 */
+
+}
+#red .ui-slider-handle {
+  background: url("../images/slider.png");
+  width: rem(23);
+  height: rem(26);
+  border: none;
+  outline: none;
+  top: rem(15);
+  margin-left: rem(-13);
+}

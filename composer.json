@@ -1,0 +1,13 @@
+{
+  "name": "uplab/magistral.frontend",
+  "type": "bitrix-d7-template",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev",
+      "dev-v1": "1.0.x-dev"
+    }
+  },
+  "require": {
+    "composer/installers": "~1"
+  }
+}

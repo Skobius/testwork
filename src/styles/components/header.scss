@@ -1,0 +1,136 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  background: $white;
+  height: rem(80);
+
+  &__menu {
+    display: none;
+
+    &--blue {
+      .header__menu--top, .header__menu--middle, .header__menu--bottom {
+        background: $blue;
+      }
+    }
+
+    &--active {
+      @include media-breakpoint-down(tab) {
+        .header__menu--middle {
+          display: none;
+        }
+
+        .header__menu--top {
+          transform: rotate(-45deg) translate(-12px, 11px);
+        }
+
+        .header__menu--bottom {
+          transform: rotate(45deg) translate(-3px, -2px);
+        }
+      }
+    }
+
+    @include media-breakpoint-down(tab) {
+      display: block;
+      position: fixed;
+      width: rem(40);
+      height: rem(30);
+      top: rem(20);
+      right: rem(20);
+      cursor: pointer;
+
+      &--middle {
+        top: rem(10);
+        position: absolute;
+        width: rem(40);
+        height: rem(3);
+        background: $white;
+        transition: .4s;
+      }
+
+      &:hover {
+        &:not(.header__menu--active) {
+          .header__menu--top {
+            top: rem(-2);
+          }
+
+          .header__menu--bottom {
+            top: rem(22);
+          }
+        }
+      }
+
+      &--top {
+        top: rem(0);
+        position: absolute;
+        width: rem(40);
+        height: rem(3);
+        background: $white;
+        transition: .4s;
+      }
+
+      &--bottom {
+        top: rem(20);
+        position: absolute;
+        width: rem(40);
+        height: rem(3);
+        background: $white;
+        transition: .4s;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(tab) {
+    background: transparent;
+  }
+
+  &__inner {
+    @include media-breakpoint-down(tab) {
+      display: none;
+    }
+
+    &--active {
+      @include media-breakpoint-down(tab) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        position: fixed;
+        right: rem(20);
+        padding: rem(10);
+        border-radius: rem(4);
+        box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
+        top: rem(60);
+        z-index: 10;
+
+        a {
+          margin: rem(5) !important;
+        }
+      }
+    }
+  }
+
+
+  a {
+    font-size: 14px;
+    color: $blue;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    transition: .4s;
+
+    &:not(:last-child) {
+      margin-right: rem(70);
+    }
+
+    &.active, &:hover {
+      color: #1c1c1c;
+    }
+  }
+}

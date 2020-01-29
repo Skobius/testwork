@@ -1,0 +1,6 @@
+$basevalue: 16 !default;
+
+@function rem($num) {
+    $strip-unit: $num / ($num * 0 + 1);
+    @return $strip-unit / $basevalue * 1rem;
+}

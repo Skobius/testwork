@@ -1,0 +1,16 @@
+// Container widths
+
+.container {
+  max-width: rem(768);
+  margin-right: auto;
+  margin-left: auto;
+  min-width: rem(285);
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
+.container-fluid {
+  @include make-container();
+}
